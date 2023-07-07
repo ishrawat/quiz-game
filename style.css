@@ -1,0 +1,115 @@
+
+
+  
+.container {
+    text-align: center;
+    background-color: gray;
+}
+
+.avatar-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width:  250px;
+    height: 250px;
+    margin: 10px;
+    cursor: pointer;
+}
+.avatar:hover{
+
+    border-radius: 16px 0px 16px 0px;
+    box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,0.5);
+    transform: scale(1.09);
+
+}
+
+button:hover{
+  border-radius: 16px 0px 16px 0px;
+  box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,0.5);
+  transform: scale(1.09);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 8.5vh;
+  width: 12vw;
+  border-radius: 0px 16px 0px 16px;
+  border: none;
+  font-weight: bold;
+  font-size: 1.7rem;
+  color: #323232;
+  letter-spacing: 1px;
+  background-color: transparent;
+  border: none;
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: #1AA15F;
+  color: white;
+}
+
+.characteristics {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eee8e8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: monospace;
+}
+
+.characteristics p {
+    margin: 10px 0;
+    
+}
+
+.characteristics h2 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.characteristics ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.characteristics ul li {
+    margin-bottom: 5px;
+}
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: radial-gradient(circle, #52240e, #832247, #91309e);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  
+  body {
+    margin: 0;
+    overflow: hidden;
+  }
+  

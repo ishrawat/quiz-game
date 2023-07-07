@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App-JS</title>
+    <link rel="stylesheet" href="stylefile.css">
+    <script src="https://kit.fontawesome.com/1ba2cf90f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section>
+
+        <header class="sign-in">
+
+            <h1>Sign in yourself</h1>
+
+            <form id="form-1">
+
+                <input type="text" name="username" placeholder="Enter your name">
+
+                <input type="number" name="userid" placeholder="Enter your id">
+
+                <button type="button" name="reg-btn">Submit <i class="fas fa-caret-right"></i> </button>
+
+            </form>
+
+        </header>
+
+        <main>
+
+            <div class="head">
+                <ul>
+                    <li class="userid"></li>
+                    <li class="username"></li>
+                    <li class="page">1/4</li>
+                </ul>
+            </div>
+
+            <div class="que-cont cont-1">
+
+                <div class="que que-1">
+                    <h1>&nbsp;<span>Q1-</span>&nbsp;&nbsp;What was the major urban center of the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Mohenjo-daro</button></li>
+                        <li><button onclick="right_selection()">Harappa</button></li>
+                        <li><button onclick="wrong_selection()">Lothal</button></li>
+                        <li><button onclick="wrong_selection()">Kalibangan</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-2">
+                    <h1>&nbsp;<span>Q2-</span>&nbsp;&nbsp;Which river is associated with the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Ganges</button></li>
+                        <li><button onclick="right_selection()">Indus</button></li>
+                        <li><button onclick="wrong_selection()">Yamuna</button></li>
+                        <li><button onclick="wrong_selection()">Saraswati</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-3">
+                    <h1>&nbsp;<span>Q3-</span>&nbsp;&nbsp;What is the modern-day location of the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Egypt</button></li>
+                        <li><button onclick="wrong_selection()">China</button></li>
+                        <li><button onclick="right_selection()">Pakistan and northwest India</button></li>
+                        <li><button onclick="wrong_selection()">Iraq</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-4">
+                    <h1>&nbsp;<span>Q4-</span>&nbsp;&nbsp;Which script was used by the Indus Valley people?</h1>
+                    <ul>
+                        <li><button onclick="right_selection()">Indus Script</button></li>
+                        <li><button onclick="wrong_selection()">Cuneiform</button></li>
+                        <li><button onclick="wrong_selection()">Hieroglyphics</button></li>
+                        <li><button onclick="wrong_selection()">Sanskrit</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-5">
+                    <h1>&nbsp;<span>Q5-</span>&nbsp;&nbsp;What was the main occupation of the people of the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Fishing</button></li>
+                        <li><button onclick="wrong_selection()">Hunting</button></li>
+                        <li><button onclick="wrong_selection()">Trading</button></li>
+                        <li><button onclick="right_selection()">Agriculture</button></li>
+                    </ul>
+                </div>
+                
+
+            </div>
+
+            <div class="que-cont cont-2">
+
+                <div class="que que-6">
+                    <h1>&nbsp;<span>Q6-</span>&nbsp;&nbsp;Which animal was not depicted in the art of the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Elephant</button></li>
+                        <li><button onclick="right_selection()">Lion</button></li>
+                        <li><button onclick="wrong_selection()">Bull</button></li>
+                        <li><button onclick="wrong_selection()">Unicorn</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-7">
+                    <h1>&nbsp;<span>Q7-</span>&nbsp;&nbsp;What evidence suggests that the Indus Valley civilization had a well-planned urban layout?</h1>
+                    <ul>
+                        <li><button onclick="right_selection()">Grid-like street system</button></li>
+                        <li><button onclick="wrong_selection()">Circular dwellings</button></li>
+                        <li><button onclick="wrong_selection()">Mountain fortresses</button></li>
+                        <li><button onclick="wrong_selection()">Maze-like pathways</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-8">
+                    <h1>&nbsp;<span>Q8-</span>&nbsp;&nbsp;What type of pottery was commonly found in the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Porcelain</button></li>
+                        <li><button onclick="right_selection()">Redware</button></li>
+                        <li><button onclick="wrong_selection()">Stoneware</button></li>
+                        <li><button onclick="wrong_selection()">Earthenware</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-9">
+                    <h1>&nbsp;<span>Q9-</span>&nbsp;&nbsp;Which metal was not extensively used by the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Gold</button></li>
+                        <li><button onclick="right_selection()">Bronze</button></li>
+                        <li><button onclick="wrong_selection()">Copper</button></li>
+                        <li><button onclick="wrong_selection()">Silver</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-10">
+                    <h1>&nbsp;<span>Q10-</span>&nbsp;&nbsp;Which of the following was not a citadel of the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Harappa</button></li>
+                        <li><button onclick="wrong_selection()">Mohenjo-daro</button></li>
+                        <li><button onclick="right_selection()">Lothal</button></li>
+                        <li><button onclick="wrong_selection()">Kalibangan</button></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="que-cont cont-3">
+
+                <div class="que que-11">
+                    <h1>&nbsp;<span>Q11-</span>&nbsp;&nbsp;What type of weights were used by the traders of the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="right_selection()">Cubical weights</button></li>
+                        <li><button onclick="wrong_selection()">Circular weights</button></li>
+                        <li><button onclick="wrong_selection()">Pyramidal weights</button></li>
+                        <li><button onclick="wrong_selection()">Cylindrical weights</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-12">
+                    <h1>&nbsp;<span>Q12-</span>&nbsp;&nbsp;Which animal was considered sacred in the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Monkey</button></li>
+                        <li><button onclick="wrong_selection()">Snake</button></li>
+                        <li><button onclick="right_selection()">Bull</button></li>
+                        <li><button onclick="wrong_selection()">Tiger</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-13">
+                    <h1>&nbsp;<span>Q13-</span>&nbsp;&nbsp;What was the drainage system like in the cities of the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="right_selection()">Well-planned and sophisticated</button></li>
+                        <li><button onclick="wrong_selection()">Nonexistent</button></li>
+                        <li><button onclick="wrong_selection()">Primitive</button></li>
+                        <li><button onclick="wrong_selection()">Chaotic</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-14">
+                    <h1>&nbsp;<span>Q14-</span>&nbsp;&nbsp;Which metal was primarily used for making tools and weapons in the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Iron</button></li>
+                        <li><button onclick="right_selection()">Copper</button></li>
+                        <li><button onclick="wrong_selection()">Silver</button></li>
+                        <li><button onclick="wrong_selection()">Tin</button></li>
+                    </ul>
+                </div>
+                
+                <div class="que que-15">
+                    <h1>&nbsp;<span>Q15-</span>&nbsp;&nbsp;What was the main mode of transportation in the Indus Valley civilization?</h1>
+                    <ul>
+                        <li><button onclick="wrong_selection()">Horse-drawn chariots</button></li>
+                        <li><button onclick="right_selection()">Bullock carts</button></li>
+                        <li><button onclick="wrong_selection()">Boats</button></li>
+                        <li><button onclick="wrong_selection()">Camels</button></li>
+                    </ul>
+                </div>
+                
+
+            </div>
+
+                <div class="que-cont cont-4">
+
+                    <div class="que que-16">
+                        <h1>&nbsp;<span>Q16-</span>&nbsp;&nbsp;Which structure was found in the cities of the Indus Valley civilization?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">Pyramids</button></li>
+                            <li><button onclick="right_selection()">Great Bath</button></li>
+                            <li><button onclick="wrong_selection()">Colosseum</button></li>
+                            <li><button onclick="wrong_selection()">Acropolis</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-17">
+                        <h1>&nbsp;<span>Q17-</span>&nbsp;&nbsp;What was the main crop grown by the Indus Valley people?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">Wheat</button></li>
+                            <li><button onclick="right_selection()">Barley</button></li>
+                            <li><button onclick="wrong_selection()">Rice</button></li>
+                            <li><button onclick="wrong_selection()">Maize</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-18">
+                        <h1>&nbsp;<span>Q18-</span>&nbsp;&nbsp;What evidence suggests that the Indus Valley civilization had a system of weights and measures?</h1>
+                        <ul>
+                            <li><button onclick="right_selection()">Uniformity of weights</button></li>
+                            <li><button onclick="wrong_selection()">Absence of trade</button></li>
+                            <li><button onclick="wrong_selection()">Lack of tools</button></li>
+                            <li><button onclick="wrong_selection()">Inconsistent units</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-19">
+                        <h1>&nbsp;<span>Q19-</span>&nbsp;&nbsp;Which ancient civilization is believed to have influenced the Indus Valley civilization?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">Roman Empire</button></li>
+                            <li><button onclick="right_selection()">Mesopotamian civilization</button></li>
+                            <li><button onclick="wrong_selection()">Mayan civilization</button></li>
+                            <li><button onclick="wrong_selection()">Inca civilization</button></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="que que-20">
+                        <h1>&nbsp;<span>Q20-</span>&nbsp;&nbsp;What caused the decline and eventual end of the Indus Valley civilization?</h1>
+                        <ul>
+                            <li><button onclick="wrong_selection()">Natural disasters</button></li>
+                            <li><button onclick="wrong_selection()">Invasion by foreign armies</button></li>
+                            <li><button onclick="right_selection()">Unknown reasons</button></li>
+                            <li><button onclick="wrong_selection()">Economic collapse</button></li>
+                        </ul>
+                    </div>
+    
+                </div>
+
+            </main>
+            
+            <div class="result-page">
+                <h1>your result is here</h1>
+                <ul>
+                    <li>Name: <span class="username"></span> </li>
+                    <li>id: <span class="userid"></span> </li>
+                    <li>total-que: <span>20</span> </li>
+                    <li>correct-que: <span class="correct_que"></span> </li>
+                    <li>wrong-que: <span class="wrong_que"></span> </li>
+                    <li>attempted-que: <span class="att_que"></span></li>
+                    <li>status: <span class="status"></span> </li>
+                </ul>
+                <b>Share your result</b>
+                <ol>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-whatsapp"></i></li>
+                </ol>
+            </div>
+
+    </section>
+
+    <script src="scriptfile.js"></script>
+</body>
+</html>
